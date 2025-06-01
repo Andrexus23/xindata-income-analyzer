@@ -1,5 +1,5 @@
 import kagglehub
 
-path = kagglehub.dataset_download("shohinurpervezshohan/freelancer-earnings-and-job-trends")
+# path = kagglehub.dataset_download("shohinurpervezshohan/freelancer-earnings-and-job-trends")
 
-print("Path to dataset files:", path)
+# print("Path to dataset files:", path)
