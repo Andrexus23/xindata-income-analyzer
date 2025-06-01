@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "accelerate>=1.7.0",
+    "ipykernel>=6.29.5",
     "kagglehub>=0.3.12",
     "pandas>=2.2.3",
     "torch>=2.7.0",
