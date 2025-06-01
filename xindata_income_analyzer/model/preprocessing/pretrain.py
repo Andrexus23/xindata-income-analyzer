@@ -49,4 +49,4 @@ def pretrain_model(model_name: str, dataset_file: str, output_model_file: str):
     )
     trainer.train()
     trainer.save_model(output_model_file)
-    trainer.save_pretrained(output_model_file)
+    tokenizer.save_pretrained(output_model_file)
