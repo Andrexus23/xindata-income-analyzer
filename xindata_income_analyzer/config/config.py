@@ -10,7 +10,9 @@ from pydantic_settings import (
 class ModelSettings(BaseModel):
     """Набор настроек для взаимодействия с моделью."""
 
-    path: str
+    base_model_name: str
+    new_model_path: str
+    dataset_path: str
 
 
 

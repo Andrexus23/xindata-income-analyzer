@@ -1,5 +1,7 @@
 {
     "model_settings": {
-        "path": "/path/to/model"
+        "base_model_name": "",
+        "new_model_path": "",
+        "dataset_path": ""
     }
 }

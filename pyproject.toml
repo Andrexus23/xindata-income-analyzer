@@ -8,9 +8,11 @@ dependencies = [
     "accelerate>=1.7.0",
     "ipykernel>=6.29.5",
     "kagglehub>=0.3.12",
+    "matplotlib>=3.10.3",
     "pandas>=2.2.3",
     "pydantic>=2.11.5",
     "pydantic-settings>=2.9.1",
+    "seaborn>=0.13.2",
     "torch>=2.7.0",
     "transformers>=4.52.4",
 ]
