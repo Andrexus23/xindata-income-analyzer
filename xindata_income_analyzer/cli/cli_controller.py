@@ -1,14 +1,12 @@
 """CLI Controller."""
 import cmd
-from typing import Optional
-from xindata_income_analyzer.model.text_generator import TextGenerator
 
 class CLIController(cmd.Cmd):
     """Контроллер CLI."""
     
     def __init__(self, llm_interface=None, completekey='tab', stdin=None, stdout=None):
         super().__init__(completekey, stdin, stdout)
-        self._llm_interface: Optional[TextGenerator] = llm_interface
+        self._llm_interface = llm_interface
 
 
     def default(self, line: str):
