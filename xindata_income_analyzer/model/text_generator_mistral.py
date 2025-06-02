@@ -14,7 +14,7 @@ class TextGeneratorMistral:
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForCausalLM.from_pretrained(
             model_name,
-            device_map="auto",  # автоматически распределяет модель по доступным GPU/CPU
+            device_map="cuda",  # автоматически распределяет модель по доступным GPU/CPU
             torch_dtype=torch.float16,  # для ускорения и экономии памяти
             low_cpu_mem_usage=True,
         )
