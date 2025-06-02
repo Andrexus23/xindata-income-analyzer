@@ -29,16 +29,16 @@ def pretrain_model(model_name: str, dataset_file: str, output_model_file: str):
     training_args: TrainingArguments = TrainingArguments(
         output_dir=output_model_file,
         overwrite_output_dir=True,
-        num_train_epochs=3,
-        per_device_train_batch_size=4,
-        save_steps=5000,
-        save_total_limit=2,
-        logging_steps=500,
-        learning_rate=5e-5,
-        weight_decay=0.01,
-        warmup_steps=500,
-        eval_strategy="no",  # валидация на этапе обучения не предполагается
-        fp16=True,  # GPU
+        num_train_epochs=constants.NUM_TRAIN_EPOCHS,
+        per_device_train_batch_size=constants.PER_DEVICE_TRAIN_BATCH_SIZE,
+        save_steps=constants.SAVE_STEPS,
+        save_total_limit=constants.SAVE_TOTAL_LIMIT,
+        logging_steps=constants.LOGGING_STEPS,
+        learning_rate=constants.LEARNING_RATE,
+        weight_decay=constants.WEIGHT_DECAY,
+        warmup_steps=constants.WARMUP_STEPS,
+        eval_strategy=constants.EVALUATION_STRATEGY,  # валидация на этапе обучения не предполагается
+        fp16=constants.FP16,  # GPU
     )
     
     trainer: Trainer = Trainer(
