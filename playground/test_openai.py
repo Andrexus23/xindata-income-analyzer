@@ -15,10 +15,10 @@ client = ChatCompletionsClient(
 
 response = client.complete(
     messages=[
-        SystemMessage("You are a helpful assistant."),
-        UserMessage(""),
+        SystemMessage("На одни и те же вопросы давай всегда одни и те же ответы"),
+        UserMessage("сколько лет России"),
     ],
-    temperature=1.0,
+    temperature=0.0,
     top_p=1.0,
     model=model
 )
